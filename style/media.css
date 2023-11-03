@@ -1,0 +1,247 @@
+@media screen and (min-width: 700px) {
+
+    .container {
+        max-width: 768px;
+        padding: 0 24px;
+    }
+
+    .main__title svg {
+        left: -10%;
+    }
+
+    .mobil__contact {
+        display: block;
+    }
+
+    .mobil__service {
+        position: relative;
+        margin-left: 42px;
+    }
+
+    .mobil__service:after {
+        content: "";
+        position: absolute;
+        left: -33px;
+        bottom: 9px;
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+    }
+
+    .mobil__svg,
+    .mobil__icon:nth-child(1) {
+        margin-right: 16px;
+    }
+
+    .mobil__left:after {
+        content: "";
+        position: absolute;
+        left: 61px;
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+    }
+
+    .mobil__logo {
+        margin: 0;
+    }
+
+    .mobil__burger-menu {
+        margin-right: 42px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content__article {
+        width: 50%;
+    }
+
+    .content__text {
+        max-width: 348px;
+        height: 160px;
+        font-size: 16px;
+    }
+
+    .content__image {
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .brand__list-technique {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .brand__item {
+        position: relative;
+        min-width: 240px;
+        min-height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-right: 0;
+        margin-bottom: 16px;
+        padding: 16px;
+        border-radius: 6px;
+        border: 1px solid #EAEAEA;
+        background: #FFF;
+    }
+
+    .brand__item:nth-child(4n) {
+        /* margin-right: 0px; */
+    }
+
+    .brand__title {
+        padding: 16px 32px;
+        background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+    }
+
+    .brand__btn {
+        display: flex;
+    }
+
+    .brand__item.hidden {
+        display: none;
+    }
+
+    .brand__item:nth-last-child(n+9) {
+        display: none;
+    }
+
+    .brand__item.brand__item--avtive {
+        display: flex;
+    }
+
+    .brand__btn {
+        display: flex;
+    }
+
+    .brand__svg-btn {
+        margin-right: 9px;
+        transform: rotate(0);
+        transition: transform 0.5s;
+    }
+
+    .brand__svg-btn--transform {
+        transform: rotate(180deg);
+        transition: transform 0.5s;
+    }
+
+    .swiper.swiper-initialized.swiper-horizontal {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        max-width: 1120px;
+        padding: 0 30px;
+    }
+
+    .title svg {
+        position: absolute;
+        top: -4%;
+        left: -10%;
+    }
+
+    .mobil {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu {
+        background-color: transparent;
+    }
+
+    .menu__desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main__title svg {
+        left: -12%;
+    }
+
+    .main__list_desktop,
+    .main__list {
+        display: flex;
+        list-style-type: none;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .main__service-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main__service-item:nth-child(1) {
+        padding-right: 32px;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .link__span {
+        padding-right: 8px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .content__article {
+        width: 55%;
+        overflow: auto;
+        margin-right: 20px;
+    }
+
+    .content__image {
+        width: 50%;
+    }
+
+    .content__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .text {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1057px) {
+
+    .container {
+        max-width: 1120px;
+    }
+
+    .main__list_desktop {
+        display: flex;
+    }
+
+
+    .main__list {
+        flex-wrap: wrap;
+    }
+
+    .content__text {
+        max-width: 100%;
+        height: 100%;
+    }
+}
