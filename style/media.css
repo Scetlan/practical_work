@@ -1,3 +1,10 @@
+@media (min-width: 416px) and (max-width: 692px) {
+    .content__text {
+        font-size: 16px;
+        height: 59px;
+    }
+}
+
 @media screen and (min-width: 700px) {
 
     .container {
@@ -28,8 +35,7 @@
         background: #EAEAEA;
     }
 
-    .mobil__svg,
-    .mobil__icon:nth-child(1) {
+    .mobil__svg {
         margin-right: 16px;
     }
 
@@ -73,9 +79,12 @@
 
 @media screen and (min-width: 768px) {
     .brand__list-technique {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 24px;
+        row-gap: 16px;
+
+        margin-bottom: 24px;
     }
 
     .brand__item {
@@ -86,33 +95,33 @@
         justify-content: space-between;
         align-items: center;
 
-        margin-right: 0;
-        margin-bottom: 16px;
-        padding: 16px;
+        margin: 0;
         border-radius: 6px;
         border: 1px solid #EAEAEA;
         background: #FFF;
     }
 
-    .brand__item:nth-child(4n) {
-        /* margin-right: 0px; */
+    .brand__link {
+        width: 100%;
+        height: 100%;
+        padding: 16px;
     }
 
-    .brand__title {
-        padding: 16px 32px;
-        background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+    .blrand__img {
+        max-width: 128px;
+        max-height: 32px;
     }
 
     .brand__btn {
         display: flex;
     }
 
-    .brand__item.hidden {
+    .brand__item {
         display: none;
     }
 
     .brand__item:nth-last-child(n+9) {
-        display: none;
+        display: flex;
     }
 
     .brand__item.brand__item--avtive {
@@ -142,7 +151,6 @@
 @media screen and (min-width: 900px) {
     .container {
         max-width: 1120px;
-        padding: 0 30px;
     }
 
     .title svg {
@@ -225,6 +233,19 @@
     }
 }
 
+@media screen and (max-width: 1110px) {
+
+.brand__list-technique {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 1120px) {
+.brand__list-technique {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
 @media screen and (min-width: 1057px) {
 
     .container {
@@ -243,5 +264,12 @@
     .content__text {
         max-width: 100%;
         height: 100%;
+    }
+    .brand__item {
+        display: none;
+    }
+
+    .brand__item:nth-last-child(n+7) {
+        display: flex;
     }
 }
