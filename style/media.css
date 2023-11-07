@@ -234,19 +234,23 @@
 }
 
 @media screen and (max-width: 1110px) {
-
-.brand__list-technique {
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    .brand__list-technique {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1120px) {
-.brand__list-technique {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+    
+    .brand__list-technique {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1057px) {
+
+    .main__navigation {
+        padding-bottom: 16px;
+    }
 
     .container {
         max-width: 1120px;
@@ -265,6 +269,7 @@
         max-width: 100%;
         height: 100%;
     }
+
     .brand__item {
         display: none;
     }
