@@ -7,6 +7,10 @@
 
 @media screen and (min-width: 700px) {
 
+    .swiper.swiper-initialized.swiper-horizontal {
+        display: none;
+    }
+
     .container {
         max-width: 768px;
         padding: 0 24px;
@@ -77,7 +81,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 730px) {
     .brand__list-technique {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -89,7 +93,7 @@
 
     .brand__item {
         position: relative;
-        min-width: 240px;
+        min-width: 224px;
         min-height: 72px;
         display: flex;
         justify-content: space-between;
@@ -107,12 +111,12 @@
         padding: 16px;
     }
 
-    .blrand__img {
+    .brand-logo {
         max-width: 128px;
         max-height: 32px;
     }
 
-    .brand__btn {
+    .more-buttom {
         display: flex;
     }
 
@@ -128,23 +132,19 @@
         display: flex;
     }
 
-    .brand__btn {
+    .more-buttom {
         display: flex;
     }
 
-    .brand__svg-btn {
+    .more-buttom__svg {
         margin-right: 9px;
         transform: rotate(0);
         transition: transform 0.5s;
     }
 
-    .brand__svg-btn--transform {
+    .more-buttom__svg--transform {
         transform: rotate(180deg);
         transition: transform 0.5s;
-    }
-
-    .swiper.swiper-initialized.swiper-horizontal {
-        display: none;
     }
 }
 
@@ -231,6 +231,7 @@
     .text {
         display: block;
     }
+
 }
 
 @media screen and (max-width: 1110px) {
@@ -243,6 +244,7 @@
     
     .brand__list-technique {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 24px;
     }
 }
 
@@ -272,9 +274,19 @@
 
     .brand__item {
         display: none;
+        min-width: 240px;
     }
 
     .brand__item:nth-last-child(n+7) {
+        display: flex;
+    }
+
+
+    .type-technique__item {
+        display: none;
+    }
+
+    .type-technique__item:nth-last-child(n+2) {
         display: flex;
     }
 }

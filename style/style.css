@@ -54,14 +54,23 @@ button {
     width: 40px;
     height: 40px;
 
+    background-color: #FF3E79;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #FF3E79;
     border-radius: 100%;
 }
 
 .icon:hover {
     background-color: #c02150;
+}
+
+.details {
+    width: 40px;
+    height: 40px;
+
+    background-color: transparent;
+    border: 2px solid #FF3E79;
+    border-radius: 100%;
 }
 
 .menu__navigation_background {
@@ -199,7 +208,6 @@ button {
 .drop-down__lang li a:hover {
     color: #7E7E82;
 }
-
 
 .menu,
 .main__navigation {
@@ -349,30 +357,24 @@ button {
     padding-top: 51px;
 }
 
-.brand__title {
+.title-blog {
     width: 100vw;
     font-size: 16px;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     padding: 16px 0;
     text-transform: uppercase;
     color: #7E7E82;
     background: linear-gradient(to right, #F8F8F8, #FFFFFF);
 }
 
-.brand__btn {
+.more-buttom {
     display: none;
 }
 
 .brand__list-technique {
     display: none;
-}
-
-.brand__info,
-.swiper-slide__info {
-    background-color: transparent;
-    border: 2px solid #FF3E79;
 }
 
 .swiper {
@@ -425,4 +427,36 @@ div.swiper-button-prev:after {
 div.swiper-horizontal>.swiper-scrollbar,
 div.swiper-scrollbar.swiper-scrollbar-horizontal {
     height: 0;
+}
+
+.type-technique__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+
+.type-technique {
+    padding-top: 24px;
+}
+
+.type-technique__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 240px;
+    height: 160px;
+
+    padding: 16px;
+    background-color: #FFFFFF;
+}
+
+
+.type-technique__btn {
+    margin: auto;
+    margin-bottom: 0;
+    margin-right: 0;
 }
