@@ -16,7 +16,7 @@ const brandBtn = document.querySelector('.more-buttom');
 const brandAll = document.querySelector('.brand__all');
 const brandSvgBtn = document.querySelector('.more-buttom__svg');
 
-brandBtn.addEventListener('click', () => {
+brandAll.addEventListener('click', () => {
     brandItems.forEach(item => {
         item.classList.add('brand__item--avtive');
     });
@@ -30,33 +30,4 @@ brandBtn.addEventListener('click', () => {
         });
         brandSvgBtn.classList.remove('more-buttom__svg--transform');
     }
-});
-
-
-// swiper
-
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-        dynamicMainBullets: 7,
-        clickable: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 16,
-        },
-    },
-
 });

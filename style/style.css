@@ -388,14 +388,13 @@ button {
 
 
     display: flex;
-    overflow: hidden;
+    overflow: visible;
     transition-property: transform;
     box-sizing: content-box;
 }
 
 .swiper-slide {
     min-width: 224px;
-    max-width: 224px;
     min-height: 72px;
     max-height: 72px;
     border-radius: 6px;
@@ -412,11 +411,6 @@ button {
 .swiper-slide__link {
     position: relative;
     padding: 10px;
-}
-
-.swiper-wrapper {
-    display: flex;
-    overflow: visible;
 }
 
 div.swiper-button-next:after,

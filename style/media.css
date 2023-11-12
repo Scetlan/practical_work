@@ -15,6 +15,7 @@
 
         margin-bottom: 24px;
     }
+
     .brand__item {
         position: relative;
         min-height: 72px;
@@ -145,9 +146,6 @@
 }
 
 @media screen and (min-width: 730px) {
-    .brand__item {
-        min-width: 224px;
-    }
 
     .brand__link {
         padding: 16px;
@@ -240,20 +238,6 @@
 
 }
 
-/* @media screen and (max-width: 1110px) {
-    .brand__list-technique {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-} */
-
-@media screen and (min-width: 1120px) {
-    
-    .brand__list-technique {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 24px;
-    }
-}
-
 @media screen and (min-width: 1057px) {
 
     .main__navigation {
@@ -283,16 +267,22 @@
         min-width: 240px;
     }
 
-    .brand__item:nth-last-child(n+7) {
-        display: flex;
-    }
-
-
     .type-technique__item {
         display: none;
     }
 
     .type-technique__item:nth-last-child(n+2) {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .brand__list-technique {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 24px;
+    }
+
+    .brand__item:nth-last-child(n+7) {
         display: flex;
     }
 }
